@@ -1,8 +1,21 @@
 {
   "name": "react-se",
   "version": "0.1.0",
-  "private": true,
+  "description": "react 基础组件库",
+  "repository": ":username/:repository",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [],
+  "author": "ZhangJinLong",
+  "private": false,
+  "files": [
+    "lib",
+    "theme"
+  ],
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -11,7 +24,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile": "npx babel src/component --out-dir lib",
+    "build-css": "node-sass src/asset/scss -o theme",
+    "postcss": "postcss --use autoprefixer -o theme/index.css theme/*.css",
+    "public": "npm run compile & npm run build-css & npm run postcss"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "postcss-cli": "^6.1.2"
   }
 }

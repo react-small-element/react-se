@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button } from "./component";
+import "./asset/scss/index.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button className="my-button" onClick={buttonClick}>
+        按钮
+      </Button>
     </div>
   );
+}
+
+function buttonClick() {
+  let body = document.getElementsByTagName("body")[0];
+  let div = document.createElement("DIV");
+  div.innerText = Math.floor(Math.random() * 9 + 1);
+  body.appendChild(div);
+  return;
 }
 
 export default App;

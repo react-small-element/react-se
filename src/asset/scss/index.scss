@@ -1,0 +1,46 @@
+$theme-color: #3378dd;
+$page-backgroup-color: #f4f7fa; //页面背景颜色
+
+$text-color-1: #333333; //文本一级信息
+
+$error-color: #fae6e3;
+$success-color: #dff2ef;
+$warn-color: #fff6e4;
+$info-color: $theme-color;
+$white-color: #ffffff;
+$block-color: #000000;
+
+$button-hover-color: #3d82e7;
+$button-disable: #ebebeb;
+
+$fontsize-1: 12px;
+$fontsize-2: 14px;
+$fontsize-3: 15px;
+$fontsize-4: 17px;
+$fontsize-5: 20px;
+
+$border-radius: 4px;
+$button-padding-level: 15px;
+$button-padding-vertical: 5px;
+$button-height: 30px;
+
+.zc-button {
+  background-color: $theme-color;
+  color: $white-color;
+  border-radius: $border-radius;
+  border: none;
+  padding: 0px $button-padding-level;
+  height: $button-height;
+  font-size: $fontsize-2;
+  cursor: pointer;
+  &:hover {
+    background-color: $button-hover-color;
+    transform: rotate(30deg);
+  }
+  &:focus {
+    outline: none;
+  }
+  &[disabled] {
+    background-color: $button-disable;
+  }
+}
