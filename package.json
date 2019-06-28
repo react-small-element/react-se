@@ -1,6 +1,6 @@
 {
   "name": "react-se",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react 基础组件库",
   "repository": ":username/:repository",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "compile": "npx babel src/component --out-dir lib",
     "build-css": "node-sass src/asset/scss -o theme",
     "postcss": "postcss --use autoprefixer -o theme/index.css theme/*.css",
-    "public": "npm run compile & npm run build-css & npm run postcss"
+    "public": "npm run postcss & npm run build-css & npm run compile"
   },
   "eslintConfig": {
     "extends": "react-app"

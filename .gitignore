@@ -350,6 +350,8 @@ fabric.properties
 
 # production
 /build
+/lib
+/theme
 
 # misc
 .DS_Store
