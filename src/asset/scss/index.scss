@@ -15,14 +15,18 @@ $button-disable: #ebebeb;
 
 $fontsize-1: 12px;
 $fontsize-2: 14px;
-$fontsize-3: 15px;
-$fontsize-4: 17px;
+$fontsize-3: 16px;
+$fontsize-4: 18px;
 $fontsize-5: 20px;
 
 $border-radius: 4px;
 $button-padding-level: 15px;
 $button-padding-vertical: 5px;
 $button-height: 30px;
+
+$sliver-height: 40px;
+
+$box-padding-level: 20px;
 
 .zc-button {
   background-color: $theme-color;
@@ -42,4 +46,36 @@ $button-height: 30px;
   &[disabled] {
     background-color: $button-disable;
   }
+}
+
+.zc-sliver {
+  height: $sliver-height;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  padding-left: $box-padding-level;
+  display: flex;
+  align-items: center;
+  $border-radius: $border-radius;
+  font-size: $fontsize-3;
+  background-color: $info-color;
+  color: $white-color;
+}
+.zc-sliver > .zc-sliver-close {
+  position: absolute;
+  right: $box-padding-level;
+}
+
+.zc-circle {
+  display: inline-block;
+  border-radius: 100%;
+  width: $box-padding-level;
+  height: $box-padding-level;
+  line-height: $box-padding-level;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $theme-color;
+  color: $white-color;
+  background-color: $theme-color;
 }
