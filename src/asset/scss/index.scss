@@ -45,6 +45,9 @@ $popup-panels-footer-height: 40px;
 $input-height: 30px;
 $input-width: 200px;
 
+$small-img-height: 100px;
+$small-img-width: 100px;
+
 .zc-button {
   background-color: $theme-color;
   color: $white-color;
@@ -186,4 +189,56 @@ $input-width: 200px;
   top: 0px;
   bottom: opx;
   color: $input-text-color;
+}
+
+.zc-auto-size {
+  background-color: $page-backgroup-color;
+}
+
+.zc-img-zoom-parents {
+  position: relative;
+}
+.zc-img-zoom {
+  width: $small-img-width;
+  height: $small-img-height;
+}
+.zc-img-zoom-enlarge-icon {
+  position: absolute;
+  right: 2px;
+  color: $theme-color;
+}
+.zc-img-zoom-big {
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  text-align: center;
+  z-index: 3;
+  padding: $box-padding-vertical $box-padding-level * 2;
+  background-color: transparent;
+  overflow-y: auto;
+}
+.zc-img-zoom-big img {
+  max-width: 100%;
+}
+.zc-img-zoom-big-icon {
+  position: absolute;
+  top: 0px;
+  right: $box-padding-level;
+  color: $theme-color;
+}
+.zc-img-zoom-big-icon i {
+  font-size: $fontsize-5;
+}
+.zc-img-zoom-tools {
+  position: relative;
+  z-index: 4;
+  color: $theme-color;
+  background-color: $page-backgroup-color;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.zc-img-zoom-tools > span > i {
+  font-size: $fontsize-5;
 }

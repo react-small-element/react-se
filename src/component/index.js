@@ -8,8 +8,10 @@ import {
   PopupPanelsContent,
   PopupPanelsFooter
 } from "./modal";
+import { AutoSize } from "./fragment";
 
 import { Input, Textarea } from "./input";
+import { ImgZoom } from "./img";
 
 export {
   Button,
@@ -21,5 +23,7 @@ export {
   PopupPanelsContent,
   PopupPanelsFooter,
   Input,
-  Textarea
+  Textarea,
+  AutoSize,
+  ImgZoom
 };
