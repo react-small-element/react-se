@@ -8,10 +8,12 @@ $success-color: #dff2ef;
 $warn-color: #fff6e4;
 $info-color: $theme-color;
 $white-color: #ffffff;
-$block-color: #000000;
+$black-color: #000000;
 
 $button-hover-color: #3d82e7;
 $button-disable: #ebebeb;
+
+$partition-line-color: #efefef;
 
 $fontsize-1: 12px;
 $fontsize-2: 14px;
@@ -27,6 +29,13 @@ $button-height: 30px;
 $sliver-height: 40px;
 
 $box-padding-level: 20px;
+$box-padding-vertical: 20px;
+$top: 50px;
+
+$popup-panels-width: 500px;
+$popup-panels-height: 500px;
+$popup-panels-header-height: 40px;
+$popup-panels-footer-height: 40px;
 
 .zc-button {
   background-color: $theme-color;
@@ -70,12 +79,65 @@ $box-padding-level: 20px;
   display: inline-block;
   border-radius: 100%;
   width: $box-padding-level;
-  height: $box-padding-level;
-  line-height: $box-padding-level;
+  height: $box-padding-vertical;
+  line-height: $box-padding-vertical;
   text-align: center;
   border-style: solid;
   border-width: 1px;
   border-color: $theme-color;
   color: $white-color;
   background-color: $theme-color;
+}
+
+.zc-modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba($color: $black-color, $alpha: 0.5);
+}
+
+.zc-popup-panels-parents {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 3;
+  padding: 0px;
+  margin: 0px;
+}
+.zc-popup-panels {
+  position: relative;
+  margin: 0px auto;
+  padding: $box-padding-vertical $box-padding-level;
+  top: $top;
+  z-index: 3;
+  width: $popup-panels-width;
+  background-color: $white-color;
+  border-radius: $border-radius;
+}
+.zc-popup-panels-header {
+  position: relative;
+  border-bottom: solid 1px $partition-line-color;
+  height: $popup-panels-header-height;
+  line-height: $popup-panels-header-height;
+  pointer-events: none;
+}
+.zc-popup-panels-content {
+  position: relative;
+  overflow-y: auto;
+  height: $popup-panels-height;
+  padding-top: $box-padding-vertical;
+  padding-bottom: $box-padding-vertical;
+  pointer-events: none;
+}
+.zc-popup-panels-footer {
+  position: relative;
+  border-top: solid 1px $partition-line-color;
+  height: $popup-panels-footer-height;
+  line-height: $popup-panels-footer-height;
+  pointer-events: none;
 }

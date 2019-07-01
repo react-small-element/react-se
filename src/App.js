@@ -1,5 +1,14 @@
 import React from "react";
-import { Button, Sliver, Circle } from "./component";
+import {
+  Button,
+  Sliver,
+  Circle,
+  Modal,
+  PopupPanels,
+  PopupPanelsHeader,
+  PopupPanelsContent,
+  PopupPanelsFooter
+} from "./component";
 import "./asset/scss/index.scss";
 
 function App() {
@@ -12,6 +21,12 @@ function App() {
         ok
       </Sliver>
       <Circle>1</Circle>
+      <Modal />
+      <PopupPanels isDrag={true}>
+        <PopupPanelsHeader>头</PopupPanelsHeader>
+        <PopupPanelsContent>内容</PopupPanelsContent>
+        <PopupPanelsFooter>脚</PopupPanelsFooter>
+      </PopupPanels>
     </div>
   );
 }

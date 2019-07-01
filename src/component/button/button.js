@@ -37,7 +37,6 @@ class Button extends Component {
       className,
       ...otherProps
     } = this.props;
-    console.log(rightIcon);
     let disabledClick = false;
     if (disabled) {
       disabledClick = true;
