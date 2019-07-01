@@ -5,7 +5,7 @@ class Circle extends Component {
   render() {
     let { className, children, style, diameter } = this.props;
     let circleDiameter = getCircleDiameter(diameter);
-    let classNames = className ? "zc-circle" + className : "zc-circle";
+    let classNames = className ? "zc-circle " + className : "zc-circle";
     return (
       <div className={classNames} style={{ ...circleDiameter, ...style }}>
         {children}

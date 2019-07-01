@@ -9,6 +9,8 @@ import {
   PopupPanelsFooter
 } from "./modal";
 
+import { Input, Textarea } from "./input";
+
 export {
   Button,
   Sliver,
@@ -17,5 +19,7 @@ export {
   PopupPanels,
   PopupPanelsHeader,
   PopupPanelsContent,
-  PopupPanelsFooter
+  PopupPanelsFooter,
+  Input,
+  Textarea
 };

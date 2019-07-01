@@ -12,7 +12,7 @@ class PopupPanels extends Component {
   render() {
     let { className, isDrag } = this.props;
     let classNames = className
-      ? "zc-popup-panels" + className
+      ? "zc-popup-panels " + className
       : "zc-popup-panels";
     return (
       this.state.show && (

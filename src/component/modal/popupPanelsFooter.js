@@ -5,7 +5,7 @@ class PopupPanelsFooter extends Component {
   render() {
     let { className, style } = this.props;
     let classNames = className
-      ? "zc-popup-panels-footer" + className
+      ? "zc-popup-panels-footer " + className
       : "zc-popup-panels-footer";
     return (
       <div className={classNames} style={style}>

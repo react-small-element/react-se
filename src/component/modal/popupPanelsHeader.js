@@ -5,7 +5,7 @@ class PopupPanelsHeader extends Component {
   render() {
     let { className, style } = this.props;
     let classNames = className
-      ? "zc-popup-panels-header" + className
+      ? "zc-popup-panels-header " + className
       : "zc-popup-panels-header";
     return (
       <div className={classNames} style={style}>

@@ -1,3 +1,5 @@
+@import "./reset";
+
 $theme-color: #3378dd;
 $page-backgroup-color: #f4f7fa; //页面背景颜色
 
@@ -14,6 +16,9 @@ $button-hover-color: #3d82e7;
 $button-disable: #ebebeb;
 
 $partition-line-color: #efefef;
+
+$input-border-color: #ebebeb;
+$input-text-color: #333333;
 
 $fontsize-1: 12px;
 $fontsize-2: 14px;
@@ -36,6 +41,9 @@ $popup-panels-width: 500px;
 $popup-panels-height: 500px;
 $popup-panels-header-height: 40px;
 $popup-panels-footer-height: 40px;
+
+$input-height: 30px;
+$input-width: 200px;
 
 .zc-button {
   background-color: $theme-color;
@@ -140,4 +148,42 @@ $popup-panels-footer-height: 40px;
   height: $popup-panels-footer-height;
   line-height: $popup-panels-footer-height;
   pointer-events: none;
+}
+
+.zc-input-parents {
+  position: relative;
+}
+.zc-input {
+  height: $input-height;
+  border: none;
+  border-radius: $border-radius;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $input-border-color;
+  outline: none;
+  padding-left: $box-padding-level;
+  padding-right: $box-padding-level * 2;
+  color: $input-text-color;
+  width: $input-width;
+  line-height: $input-height;
+}
+.zc-textarea {
+  border-radius: $border-radius;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $input-border-color;
+  color: $input-text-color;
+  padding: $box-padding-vertical/2 $box-padding-level/2;
+  width: $input-width;
+}
+.zc-input:focus,
+.zc-textarea:focus {
+  border-color: $theme-color;
+}
+.zc-input-icon {
+  position: absolute;
+  right: $box-padding-level / 2;
+  top: 0px;
+  bottom: opx;
+  color: $input-text-color;
 }

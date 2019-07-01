@@ -42,7 +42,7 @@ class Sliver extends Component {
 
   render() {
     let { show } = this.state;
-    let { message, icon, type, leftIcon, leftIconStyle } = this.props;
+    let { message, icon, type, leftIcon, leftIconStyle, second } = this.props;
     let sliverStyle = {};
     switch (type) {
       case "error":
@@ -71,9 +71,11 @@ class Sliver extends Component {
             </span>
           )}
           {message}
-          <span className="zc-sliver-close" onClick={this.closeSliver}>
-            <i className={leftIcon} />
-          </span>
+          {second === 0 && (
+            <span className="zc-sliver-close" onClick={this.closeSliver}>
+              <i className={leftIcon} />
+            </span>
+          )}
         </div>
       )
     );

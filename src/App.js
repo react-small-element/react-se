@@ -7,7 +7,9 @@ import {
   PopupPanels,
   PopupPanelsHeader,
   PopupPanelsContent,
-  PopupPanelsFooter
+  PopupPanelsFooter,
+  Input,
+  Textarea
 } from "./component";
 import "./asset/scss/index.scss";
 
@@ -21,12 +23,14 @@ function App() {
         ok
       </Sliver>
       <Circle>1</Circle>
-      <Modal />
+      {/* <Modal />
       <PopupPanels isDrag={true}>
         <PopupPanelsHeader>头</PopupPanelsHeader>
         <PopupPanelsContent>内容</PopupPanelsContent>
         <PopupPanelsFooter>脚</PopupPanelsFooter>
-      </PopupPanels>
+      </PopupPanels> */}
+      <Input />
+      <Textarea />
     </div>
   );
 }
