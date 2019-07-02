@@ -78,18 +78,18 @@ import { getBodyHeight } from "react-se/tools/index.js";
 
 **属性**
 
-| 参数           | 说明                                  | 类型    | 可选值 | 默认值 |
-| :------------- | ------------------------------------- | ------- | ------ | ------ |
-| disabled       | 是否禁用                              | boolean | -      | false  |
-| leftIcon       | 按钮左侧图标 class(classfont.css)     | string, | -      | -      |
-| leftIconStyle  | 左侧图标行内样式                      | object  | -      | -      |
-| rightIcon      | 按钮右侧图标(同左侧图标)              | string  | -      | -      |
-| rightIconStyle | 同左侧图标                            | object  | -      | -      |
-| style          | 行内样式                              | object  | -      | -      |
-| edef           | 是否阻止默认事件(任何非空值表示 true) | string  | -      | null   |
-| className      | 类名                                  | string  | -      | -      |
-| children       | props.children                        | any     | -      | -      |
-| otherProps     | 其他自有属性                          | -       | -      | -      |
+| 参数           | 说明                                   | 类型    | 可选值 | 默认值 |
+| :------------- | -------------------------------------- | ------- | ------ | ------ |
+| disabled       | 是否禁用                               | boolean | -      | false  |
+| leftIcon       | 按钮左侧图标 icon class(classfont.css) | string, | -      | -      |
+| leftIconStyle  | 左侧图标行内样式                       | object  | -      | -      |
+| rightIcon      | 按钮右侧图标(同左侧图标)               | string  | -      | -      |
+| rightIconStyle | 同左侧图标                             | object  | -      | -      |
+| style          | 行内样式                               | object  | -      | -      |
+| edef           | 是否阻止默认事件(任何非空值表示 true)  | string  | -      | null   |
+| className      | 类名                                   | string  | -      | -      |
+| children       | props.children                         | any     | -      | -      |
+| otherProps     | 其他自有属性                           | -       | -      | -      |
 
 **事件**
 
@@ -103,20 +103,20 @@ import { getBodyHeight } from "react-se/tools/index.js";
 
 **属性**
 
-| 参数               | 说明                                              | 类型    | 可选值 | 默认值 |
-| :----------------- | ------------------------------------------------- | ------- | ------ | ------ |
-| src                | 图片地址(当有值时显示为图片按钮)                  | string  | -      | -      |
-| alt                | 图片说明(当 src 有值时有效)                       | string  | -      | -      |
-| imgClassName       | 图片按钮类名(当 src 有值时有效)                   | string  | -      | -      |
-| imgStyle           | 图片按钮行内样式(当 src 有值时有效)               | object  | -      | -      |
-| btnStyle           | 按钮行内样式 (当 src 空时有效)                    | object  | -      | -      |
-| btnClassName       | 按钮类名(当 src 空时有效)                         | string  | -      | -      |
-| leftIcon           | 按钮左侧图标 class(classfont.css.当 src 空时有效) | string, | -      | -      |
-| leftIconClassName  | 左侧图标类名(当 src 空时有效)                     | object  | -      | -      |
-| rightIcon          | 按钮右侧图标(同左侧图标)                          | string  | -      | -      |
-| rightIconClassName | 同左侧图标                                        | object  | -      | -      |
-| boxStyle           | 盒子按钮行内样式                                  | object  | -      | -      |
-| accept             | 限制文件类型                                      | string  | -      | -      |
+| 参数               | 说明                                                   | 类型    | 可选值 | 默认值 |
+| :----------------- | ------------------------------------------------------ | ------- | ------ | ------ |
+| src                | 图片地址(当有值时显示为图片按钮)                       | string  | -      | -      |
+| alt                | 图片说明(当 src 有值时有效)                            | string  | -      | -      |
+| imgClassName       | 图片按钮类名(当 src 有值时有效)                        | string  | -      | -      |
+| imgStyle           | 图片按钮行内样式(当 src 有值时有效)                    | object  | -      | -      |
+| btnStyle           | 按钮行内样式 (当 src 空时有效)                         | object  | -      | -      |
+| btnClassName       | 按钮类名(当 src 空时有效)                              | string  | -      | -      |
+| leftIcon           | 按钮左侧图标 icon class(classfont.css.当 src 空时有效) | string, | -      | -      |
+| leftIconClassName  | 左侧图标类名(当 src 空时有效)                          | object  | -      | -      |
+| rightIcon          | 按钮右侧图标(同左侧图标)                               | string  | -      | -      |
+| rightIconClassName | 同左侧图标                                             | object  | -      | -      |
+| boxStyle           | 盒子按钮行内样式                                       | object  | -      | -      |
+| accept             | 限制文件类型                                           | string  | -      | -      |
 
 **事件**
 
@@ -175,3 +175,96 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | onKeyUp     | 键盘按键弹起时触发 | event    |
 | onFocus     | input 聚焦是触发   | -        |
 | onIconClick | 点击 icon 时触发   | -        |
+
+###### Textarea 输入文本框
+
+**属性**
+
+| 参数       | 说明         | 类型   | 可选值 | 默认值 |
+| :--------- | ------------ | ------ | ------ | ------ |
+| className  | 类名         | string | -      | -      |
+| rows       | 行数         | number | -      | -      |
+| otherProps | 其他自有属性 | -      | -      | -      |
+
+**事件**
+
+| 事件名称 | 说明           | 回调参数 |
+| :------- | -------------- | -------- |
+| onChange | 内容改变时触发 | value    |
+
+###### Modal 遮罩层
+
+**属性**
+
+无
+
+###### PopupPanels 弹出窗
+
+**属性**
+
+| 参数      | 说明           | 类型    | 可选值 | 默认值 |
+| :-------- | -------------- | ------- | ------ | ------ |
+| style     | 行内样式       | object  | -      | -      |
+| className | 类名           | string  | -      | -      |
+| isDrag    | 是否可拖动     | boolean | -      | false  |
+| children  | props.children | any     | -      | -      |
+
+###### PopupPanelsHeader 弹出窗头部。与弹出窗配合使用
+
+**属性**
+
+| 参数      | 说明           | 类型   | 可选值 | 默认值 |
+| :-------- | -------------- | ------ | ------ | ------ |
+| style     | 行内样式       | object | -      | -      |
+| className | 类名           | string | -      | -      |
+| children  | props.children | any    | -      | -      |
+
+###### PopupPanelsContent 弹出窗主体。与弹出窗配合使用
+
+**属性**
+
+| 参数      | 说明           | 类型   | 可选值 | 默认值 |
+| :-------- | -------------- | ------ | ------ | ------ |
+| style     | 行内样式       | object | -      | -      |
+| className | 类名           | string | -      | -      |
+| children  | props.children | any    | -      | -      |
+
+###### PopupPanelsFooter 弹出窗脚部。与弹出窗配合使用
+
+**属性**
+
+| 参数      | 说明           | 类型   | 可选值 | 默认值 |
+| :-------- | -------------- | ------ | ------ | ------ |
+| style     | 行内样式       | object | -      | -      |
+| className | 类名           | string | -      | -      |
+| children  | props.children | any    | -      | -      |
+
+###### Circle 圆圈
+
+**属性**
+
+| 参数      | 说明             | 类型   | 可选值 | 默认值 |
+| :-------- | ---------------- | ------ | ------ | ------ |
+| style     | 行内样式         | object | -      | -      |
+| className | 类名             | string | -      | -      |
+| diameter  | 直径(如: "10px") | string | -      | -      |
+| children  | props.children   | any    | -      | -      |
+
+###### Sliver 提示框。位于文档流里。
+
+**属性**
+
+| 参数          | 说明                                                   | 类型   | 可选值                     | 默认值 |
+| :------------ | ------------------------------------------------------ | ------ | -------------------------- | ------ |
+| message       | 提示内容                                               | string | -                          | -      |
+| leftIcon      | 左侧图标 icon class(classfont.css)                     | string | -                          | -      |
+| leftIconStyle | 左侧图标行内样式(leftIcon 有值时有效)                  | object | -                          | -      |
+| second        | 自动关闭时间 /秒 (0,则永不自动关闭)                    | number | -                          | 3      |
+| type          | 提示类型                                               | string | error, success, warn, info | "info" |
+| closeIcon     | 关闭图标 icon class(classfont.css, second 为 0 时有效) | string | -                          | -      |
+
+**事件**
+
+| 事件名称 | 说明              | 回调参数 |
+| :------- | ----------------- | -------- |
+| callback | Sliver 关闭时触发 | -        |
