@@ -275,3 +275,220 @@ import { getBodyHeight } from "react-se/tools/index.js";
 此方式比较方便快捷
 
 #### 工具
+
+###### getBodyHeight
+
+**说明** 获取 body 高度
+**参数** -
+**是否异步** 否
+**返回值** number
+
+###### getBodyWidht
+
+**说明** 获取 body 宽度
+**参数** -
+**是否异步** 否
+**返回值** number
+
+###### sha1
+
+**说明** sha1 加密
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### md5
+
+**说明** md5 加密
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### importExcelToJson
+
+**说明** 导入 Excel 文件生成 json object 数据
+**参数** { file:file, header:["keyName-1","keyName-2",...], callback:function(data), isDeleteTheFirstRow:boolean, errorCallback:function(error) }
+**是否异步** 是。 不需要 async 声明
+**返回值** -
+
+###### exportJsonToExcel
+
+**说明** 将符合规范的数据导出 Excel 文件
+**参数** { data:[{},{},...], filename: "文件名", header:["第一列名称","第二列名称",...], errorCallback:function(error) }
+**是否异步** 是。 不需要 async 声明
+**返回值** 生成一个 Excel 文件自动保存
+
+###### dateTimeToFormat
+
+**说明** 时间日期格式化
+**参数** (new Date())
+**是否异步** 否
+**返回值** string. Y-m-d H:m:s
+
+###### dateToFormat
+
+**说明** 时间年月日期格式化
+**参数** (new Date())
+**是否异步** 否
+**返回值** string. Y-m-d
+
+###### dateParse
+
+**说明** 日期字符串解析
+**参数** ("Date string") 日期时间格式的字符串
+**是否异步** 否
+**返回值** Date Object
+
+###### JSONParse
+
+**说明** json 解析函数
+**参数** (json)
+**是否异步** 否
+**返回值** Object
+
+###### JSONStringify
+
+**说明** JavaScript 值(对象或者数组)转换为一个 JSON 字符串
+**参数** (object || array)
+**是否异步** 否
+**返回值** json
+
+###### pickOutVersion
+
+**说明** 过滤,挑选出版本号字符串
+**参数** (string)
+**是否异步** 否
+**返回值** string。 number.numerb.number...
+
+###### compareGtVersion
+
+**说明** 判断两个版本号大小—— val1 大于(1)等于(0)小于(-1) val2
+**参数** (string-1, string-2)
+**是否异步** 否
+**返回值** number。 1: 大于， 0: 等于， -1: 小于
+
+###### pickOutChinese
+
+**说明** 过滤,挑选出中文字符串
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### isChinese
+
+**说明** 判断是否是中文
+**参数** (string)
+**是否异步** 否
+**返回值** boolean
+
+###### pickOutNumberCSV
+
+**说明** 过滤，挑选出数字 csv 格式字符串
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### pickOutNumber
+
+**说明** 过滤，挑选出正整数数字
+**参数** (string)
+**是否异步** 否
+**返回值** integer
+
+###### isUrl
+
+**说明** 判断是否是 http 或 http 或 ftp 的 url
+**参数** (string)
+**是否异步** 否
+**返回值** boolean
+
+###### isJsonString
+
+**说明** 判断是否是 json 字符串
+**参数** (string)
+**是否异步** 否
+**返回值** boolean
+
+###### getQueryVariable
+
+**说明** 获取 url 参数
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### pickOutDecimalPointN
+
+**说明** 过滤小数点后 n 位,不传 n 或传 n 不为 number 则不进行小数点截取
+**参数** (string, int) string: 要过滤的字符串， int: 小数点后 n 位
+**是否异步** 否
+**返回值** number
+
+###### isImg
+
+**说明** 判断是否是图片
+**参数** (string)
+**是否异步** 否
+**返回值** boolean
+
+###### getFileExtension
+
+**说明** 获取 url 路径的拓展名
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### isDecimalPointN
+
+**说明** 检查字符串是否是数字字符串
+**参数** (string, integer) string: 要判断的字符串 integer: 要判断是小数点后 n 未,n 为 0，则为整数，n 不传或传非 int 型,则小数点后无穷位
+**是否异步** 否
+**返回值** boolean
+
+###### pickOutNumberAndNegative
+
+**说明** 过滤，挑选出数字和负号
+**参数** (string)
+**是否异步** 否
+**返回值** string
+
+###### isInteger
+
+**说明** 判断是否是整数
+**参数** (string || number)
+**是否异步** 否
+**返回值** boolean
+
+###### isLineFeed
+
+**说明** 是否换行
+**参数** (string)
+**是否异步** 否
+**返回值** boolean
+
+###### isItWhite
+
+**说明** 安全白名单
+**参数** (string, WhiteList) string: 检查的目标， WhiteList: 白名单 格式 const WhiteList = [{ value: "https:www.baidu.com", matchRule: "strict" }, ...]; const MatchRule = ["strict", "start", "end", "in", "startAndEnd"];
+**是否异步** 否
+**返回值** boolean
+
+###### getImgSize
+
+**说明** 获取图片的宽高尺寸
+**参数** (file)
+**是否异步** 是，async 或 promise
+**返回值** object。 {width, height}
+
+###### getImgSizeOnline
+
+**说明** 获取在线图片的宽高尺寸
+**参数** (url)
+**是否异步** 是，async 或 promise
+**返回值** object。 {width, height}
+
+###### getFileContent
+
+**说明** 读取文件内容
+**参数** (file, type) type: "Binary" || "Text" || "DataURL" || "Array"
+**是否异步** 是，async 或 promise
+**返回值** result。 result: "Binary" || "Text" || "DataURL" || "Array"

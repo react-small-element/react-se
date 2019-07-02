@@ -208,6 +208,11 @@ function pickOutNumberAndNegative(val) {
   val = val.replace(/[^\d-]/g, ""); //清除"数字"和"."以外的字符
   return val;
 }
+/**
+ * 判断是否是整数
+ * @param {string || int} val
+ * @return {boolean}
+ */
 function isInteger(val) {
   let patt = /^-?\d+$/g;
   return patt.test(val);

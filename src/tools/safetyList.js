@@ -3,7 +3,7 @@
  * @Author: zhangjinlong
  * @LastEditors: zhangjinlong
  * @Date: 2019-03-29 14:44:53
- * @LastEditTime: 2019-07-02 10:14:00
+ * @LastEditTime: 2019-07-02 17:03:35
  *
  *  html中最好还要检查href、src、location、onclick、onerror、onload、onmouseover等的值是否符合白名单。
  *  方法:可以将a标签做成公共组件，然后使用a标签时引用该组件，在该组件每次接收href值之前进行白名单校验
@@ -31,6 +31,7 @@ const MatchRule = ["strict", "start", "end", "in", "startAndEnd"];
 /**
  * 检查是否在白名单中
  * @param {string || number} val
+ * @param {array} WhiteList
  * @returns {boolean} 在白名单中则返回ture,否则返回false
  */
 function isItWhite(val, WhiteList) {
