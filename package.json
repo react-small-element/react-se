@@ -1,0 +1,60 @@
+{
+  "name": "react-se",
+  "version": "0.1.2",
+  "description": "react 基础组件库",
+  "repository": ":username/:repository",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [],
+  "author": "ZhangJinLong",
+  "private": false,
+  "files": [
+    "lib",
+    "theme",
+    "tools"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "file-saver": "^2.0.2",
+    "node-forge": "^0.8.5",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "xlsx": "^0.14.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "component": "npx babel src/component --out-dir lib",
+    "tools": "npx babel src/tools --out-dir tools",
+    "build-css": "node-sass src/asset/scss -o theme",
+    "postcss": "postcss --use autoprefixer -o theme/index.css theme/*.css",
+    "public": "npm run postcss & npm run build-css & npm run tools & npm run component"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "postcss-cli": "^6.1.2"
+  }
+}
