@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 
 class PopupPanelsFooter extends Component {
   render() {
-    let { className, style } = this.props;
+    let { className, style, children } = this.props;
     let classNames = className
       ? "zc-popup-panels-footer " + className
       : "zc-popup-panels-footer";
     return (
       <div className={classNames} style={style}>
-        {this.props.children}
+        {children}
       </div>
     );
   }
@@ -18,7 +18,6 @@ class PopupPanelsFooter extends Component {
 PopupPanelsFooter.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
-  style: PropTypes.object,
-  isShowCloseButton: PropTypes.bool
+  style: PropTypes.object
 };
 export default PopupPanelsFooter;

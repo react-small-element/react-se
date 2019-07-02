@@ -16,7 +16,7 @@ class Input extends Component {
       className,
       iconClassName,
       iconStyle,
-      isShowIcon,
+      iconName,
       ...otherProps
     } = this.props;
     let classNames = className ? "zc-input " + className : "zc-input";
@@ -35,13 +35,13 @@ class Input extends Component {
           placeholder={placeholder}
           onFocus={this.focus}
         />
-        {isShowIcon && (
+        {iconName && (
           <span
             className={iconClassNames}
             style={{ ...iconStyle }}
             onClick={this.click}
           >
-            <i className="iconfont icon-icon-refresh" />
+            <i className={iconName} />
           </span>
         )}
       </span>
@@ -91,7 +91,8 @@ Input.propTypes = {
   onChange: PropTypes.func,
   onKeyUp: PropTypes.func,
   onFocus: PropTypes.func,
-  isShowIcon: PropTypes.bool
+  iconName: PropTypes.string,
+  onIconClick: PropTypes.func
 };
 
 export default Input;

@@ -7,14 +7,14 @@ class Textarea extends Component {
     this.textchange = this.textchange.bind(this);
   }
   render() {
-    const { className, ...otherProps } = this.props;
+    const { className, rows, ...otherProps } = this.props;
     let classNames = className ? "zc-textarea " + className : "zc-textarea";
     return (
       <textarea
         {...otherProps}
         className={classNames}
         onChange={this.textchange}
-        rows={this.props.rows}
+        rows={rows}
       />
     );
   }
@@ -30,6 +30,7 @@ class Textarea extends Component {
 Textarea.propTypes = {
   otherProps: PropTypes.any,
   rows: PropTypes.number,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  className: PropTypes.string
 };
 export default Textarea;

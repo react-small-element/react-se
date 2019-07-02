@@ -352,6 +352,7 @@ fabric.properties
 /build
 /lib
 /theme
+/tools
 
 # misc
 .DS_Store

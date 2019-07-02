@@ -18,19 +18,32 @@ class ImgZoom extends Component {
 
   render() {
     let { show, deg } = this.state;
-    let { boxStyle, style, src, alt, className } = this.props;
+    let {
+      boxStyle,
+      style,
+      src,
+      alt,
+      className,
+      smallImgIconName,
+      bigImgIconName,
+      toolsRotateIconName,
+      toolsBigIconName,
+      toolsSmallIconName
+    } = this.props;
     let classNames = className ? "zc-img-zoom " + className : "zc-img-zoom";
     return (
       <span className="zc-img-zoom-parents" style={{ ...boxStyle }}>
         <img src={src} alt={alt} style={{ ...style }} className={classNames} />
         <span className="zc-img-zoom-enlarge-icon" onClick={this.enlarge}>
-          <i className="iconfont icon-icon-refresh" />
+          {smallImgIconName && <i className={smallImgIconName} />}
+          {!smallImgIconName && <span>放大</span>}
         </span>
         {show && <Modal />}
         {show && (
           <div className="zc-img-zoom-big">
             <span className="zc-img-zoom-big-icon" onClick={this.enlarge}>
-              <i className="iconfont icon-icon-refresh" />
+              {bigImgIconName && <i className={bigImgIconName} />}
+              {!bigImgIconName && <span>关闭</span>}
             </span>
             <img
               src={src}
@@ -38,13 +51,16 @@ class ImgZoom extends Component {
             />
             <div className="zc-img-zoom-tools">
               <span className="" onClick={this.rotate}>
-                <i className="iconfont icon-icon-refresh" />
+                {toolsRotateIconName && <i className={toolsRotateIconName} />}
+                {!toolsRotateIconName && <span>旋转</span>}
               </span>
               <span className="" onClick={this.bigImg.bind(this, "Enlarge")}>
-                <i className="iconfont icon-icon-refresh" />
+                {toolsBigIconName && <i className={toolsBigIconName} />}
+                {!toolsBigIconName && <span>放大</span>}
               </span>
               <span className="" onClick={this.bigImg.bind(this, "Narrow")}>
-                <i className="iconfont icon-icon-refresh" />
+                {toolsSmallIconName && <i className={toolsSmallIconName} />}
+                {!toolsSmallIconName && <span>缩小</span>}
               </span>
             </div>
           </div>
@@ -79,5 +95,18 @@ class ImgZoom extends Component {
     return;
   }
 }
+
+ImgZoom.propTypes = {
+  boxStyle: PropTypes.object,
+  style: PropTypes.object,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  className: PropTypes.string,
+  smallImgIconName: PropTypes.string,
+  bigImgIconName: PropTypes.string,
+  toolsRotateIconName: PropTypes.string,
+  toolsBigIconName: PropTypes.string,
+  toolsSmallIconName: PropTypes.string
+};
 
 export default ImgZoom;

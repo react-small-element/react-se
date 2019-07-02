@@ -244,9 +244,12 @@ $icon-padding-level: 4px;
   background-color: $page-backgroup-color;
   opacity: 0.4;
   filter: alpha(opacity=40);
-}
-.zc-img-zoom-tools > span > i {
-  font-size: $fontsize-5;
+  & > span {
+    padding: $icon-padding-level;
+    & > i {
+      font-size: $fontsize-5;
+    }
+  }
 }
 
 .zc-upload-file-btn {

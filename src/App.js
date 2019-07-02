@@ -22,7 +22,7 @@ function App() {
       <Button className="my-button" onClick={buttonClick}>
         按钮
       </Button>
-      <Sliver message="okokok" second={0} leftIcon="iconfont icon-icon-refresh">
+      <Sliver message="okokok" second={0}>
         ok
       </Sliver>
       <Circle>1</Circle>

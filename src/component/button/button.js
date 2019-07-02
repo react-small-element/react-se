@@ -35,6 +35,7 @@ class Button extends Component {
       style,
       disabled,
       className,
+      children,
       ...otherProps
     } = this.props;
     let disabledClick = false;
@@ -65,7 +66,7 @@ class Button extends Component {
             <i className={leftIcon} />
           </span>
         )}
-        <span>{this.props.children}</span>
+        <span>{children}</span>
         {rightIcon && (
           <span
             style={{
@@ -130,7 +131,9 @@ Button.propTypes = {
   onClick: PropTypes.func,
   onMouseEnter: PropTypes.func,
   onMouseLeave: PropTypes.func,
-  edef: PropTypes.string
+  edef: PropTypes.string,
+  className: PropTypes.string,
+  otherProps: PropTypes.any
 };
 
 export default Button;

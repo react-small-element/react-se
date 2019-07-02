@@ -10,7 +10,7 @@ class PopupPanels extends Component {
     this.close = this.close.bind(this);
   }
   render() {
-    let { className, isDrag } = this.props;
+    let { className, isDrag, style, children } = this.props;
     let classNames = className
       ? "zc-popup-panels " + className
       : "zc-popup-panels";
@@ -19,10 +19,10 @@ class PopupPanels extends Component {
         <div className="zc-popup-panels-parents">
           <div
             className={classNames}
-            style={{ ...this.props.style }}
+            style={{ ...style }}
             onMouseDown={isDrag ? mouseDown : function() {}}
           >
-            {this.props.children}
+            {children}
           </div>
         </div>
       )

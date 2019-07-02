@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 
 class PopupPanlesContent extends Component {
   render() {
-    let { className, style } = this.props;
+    let { className, style, children } = this.props;
     let classNames = className
       ? "zc-popup-panels-content " + className
       : "zc-popup-panels-content";
     return (
       <div className={classNames} style={style}>
-        {this.props.children}
+        {children}
       </div>
     );
   }

@@ -104,7 +104,10 @@ UploadFile.propTypes = {
   boxStyle: PropTypes.object,
   imgStyle: PropTypes.object,
   btnStyle: PropTypes.object,
+  btnClassName: PropTypes.string,
   leftIconClassName: PropTypes.string,
-  rightIconClassName: PropTypes.string
+  rightIconClassName: PropTypes.string,
+  leftIcon: PropTypes.string,
+  rightIcon: PropTypes.string
 };
 export default UploadFile;
