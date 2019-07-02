@@ -1,4 +1,4 @@
-import { Button } from "./button";
+import { Button, UploadFile } from "./button";
 import { Sliver } from "./tips";
 import { Circle } from "./tag";
 import {
@@ -25,5 +25,6 @@ export {
   Input,
   Textarea,
   AutoSize,
-  ImgZoom
+  ImgZoom,
+  UploadFile
 };
