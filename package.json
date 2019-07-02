@@ -10,7 +10,8 @@
   "private": false,
   "files": [
     "lib",
-    "theme"
+    "theme",
+    "tools"
   ],
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
