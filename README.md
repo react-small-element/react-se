@@ -9,6 +9,21 @@ node v11.2.0 +
 npm v6.4.1 +
 react v16.8.6 +
 
+## 描述
+
+该项目基于 [Create React App](https://github.com/facebook、create-react-app) 创建
+npm 上的项目是该项目打包后上传的
+打包命令
+
+```javascript
+npm run public
+```
+
+打包之后生成三个项目位于根目录，分别是
+lib -->主要的 UI 组件
+theme -->UI 样式
+tools -->小工具集
+
 ## 安装
 
 ```javascript
@@ -41,10 +56,15 @@ import { getBodyHeight } from "react-se/tools/index.js";
 > src
 >
 > > asset
-> >
+>
 > > > scss
-> > >
+>
 > > > > index.scss //UI 库样式
+>
 > > > > \_reset.scss //重置浏览器基本样式
-> > > > component //UI 组件
-> > > > tools //小工具目录
+>
+> > > component //UI 组件
+>
+> > > tools //小工具目录
+>
+> package.json
