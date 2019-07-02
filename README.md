@@ -268,3 +268,10 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | 事件名称 | 说明              | 回调参数 |
 | :------- | ----------------- | -------- |
 | callback | Sliver 关闭时触发 | -        |
+
+#### 主题
+
+主题样式开发使用**sass**，若想修改主题样式，建议直接下载 **/src/asset/scss/index.scss** 进行修改然后覆盖。<br/>
+此方式比较方便快捷
+
+#### 工具
