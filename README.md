@@ -98,3 +98,28 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | onClick      | 点击     | -        |
 | onMouseEnter | 鼠标进入 | -        |
 | onMouseLeave | 鼠标离开 | -        |
+
+###### UploadFile 选择文件按钮
+
+**属性**
+
+| 参数               | 说明                                              | 类型    | 可选值 | 默认值 |
+| :----------------- | ------------------------------------------------- | ------- | ------ | ------ |
+| src                | 图片地址(当有值时显示为图片按钮)                  | string  | -      | -      |
+| alt                | 图片说明(当 src 有值时有效)                       | string  | -      | -      |
+| imgClassName       | 图片按钮类名(当 src 有值时有效)                   | string  | -      | -      |
+| imgStyle           | 图片按钮行内样式(当 src 有值时有效)               | object  | -      | -      |
+| btnStyle           | 按钮行内样式 (当 src 空时有效)                    | object  | -      | -      |
+| btnClassName       | 按钮自定义类名(当 src 空时有效)                   | string  | -      | -      |
+| leftIcon           | 按钮左侧图标 class(classfont.css.当 src 空时有效) | string, | -      | -      |
+| leftIconClassName  | 左侧图标类名(当 src 空时有效)                     | object  | -      | -      |
+| rightIcon          | 按钮右侧图标(同左侧图标)                          | string  | -      | -      |
+| rightIconClassName | 同左侧图标                                        | object  | -      | -      |
+| boxStyle           | 盒子按钮行内样式                                  | object  | -      | -      |
+| accept             | 限制文件类型                                      | string  | -      | -      |
+
+**事件**
+
+| 事件名称 | 说明           | 回调参数  |
+| :------- | -------------- | --------- |
+| onChange | 文件改变时触发 | file 对象 |
