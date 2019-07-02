@@ -1,27 +1,27 @@
 ## react-se
 
-一个简单的自由的 React 基础 UI 库
+一个简单的自由的 React 基础 UI 库<br/>
 一些常用的小工具集
 
 ## 环境
 
-node v11.2.0 +
-npm v6.4.1 +
+node v11.2.0 +<br/>
+npm v6.4.1 +<br/>
 react v16.8.6 +
 
 ## 描述
 
-该项目基于 [Create React App](https://github.com/facebook、create-react-app) 创建
-npm 上的项目是该项目打包后上传的
+该项目基于 [Create React App](https://github.com/facebook、create-react-app) 创建<br/>
+npm 上的项目是该项目打包后上传的<br/>
 打包命令
 
 ```javascript
 npm run public
 ```
 
-打包之后生成三个项目位于根目录，分别是
-lib -->主要的 UI 组件
-theme -->UI 样式
+打包之后生成三个项目位于根目录，分别是<br/>
+lib -->主要的 UI 组件<br/>
+theme -->UI 样式<br/>
 tools -->小工具集
 
 ## 安装
@@ -53,6 +53,7 @@ import { getBodyHeight } from "react-se/tools/index.js";
 ## 目录
 
 > README.md //help
+>
 > src
 >
 > > asset
