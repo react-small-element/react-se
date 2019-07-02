@@ -87,7 +87,7 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | rightIconStyle | 同左侧图标                            | object  | -      | -      |
 | style          | 行内样式                              | object  | -      | -      |
 | edef           | 是否阻止默认事件(任何非空值表示 true) | string  | -      | null   |
-| className      | 自定义类名                            | string  | -      | -      |
+| className      | 类名                                  | string  | -      | -      |
 | children       | props.children                        | any     | -      | -      |
 | otherProps     | 其他自有属性                          | -       | -      | -      |
 
@@ -110,7 +110,7 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | imgClassName       | 图片按钮类名(当 src 有值时有效)                   | string  | -      | -      |
 | imgStyle           | 图片按钮行内样式(当 src 有值时有效)               | object  | -      | -      |
 | btnStyle           | 按钮行内样式 (当 src 空时有效)                    | object  | -      | -      |
-| btnClassName       | 按钮自定义类名(当 src 空时有效)                   | string  | -      | -      |
+| btnClassName       | 按钮类名(当 src 空时有效)                         | string  | -      | -      |
 | leftIcon           | 按钮左侧图标 class(classfont.css.当 src 空时有效) | string, | -      | -      |
 | leftIconClassName  | 左侧图标类名(当 src 空时有效)                     | object  | -      | -      |
 | rightIcon          | 按钮右侧图标(同左侧图标)                          | string  | -      | -      |
@@ -123,3 +123,55 @@ import { getBodyHeight } from "react-se/tools/index.js";
 | 事件名称 | 说明           | 回调参数  |
 | :------- | -------------- | --------- |
 | onChange | 文件改变时触发 | file 对象 |
+
+###### AutoSize 一个随窗口变化而宽高自变化的 div
+
+**属性**
+
+| 参数         | 说明           | 类型   | 可选值 | 默认值 |
+| :----------- | -------------- | ------ | ------ | ------ |
+| style        | 行内样式       | object | -      | -      |
+| className    | 类名           | string | -      | -      |
+| reduceHeight | 保留的高度     | number | -      | -      |
+| reduceWidth  | 保留的宽度     | number | -      | -      |
+| children     | props.children | any    | -      | -      |
+
+###### ImgZoom 图片容器。自带功能：查看原图，旋转，放大，缩小
+
+**属性**
+
+| 参数                | 说明                                  | 类型    | 可选值 | 默认值 |
+| :------------------ | ------------------------------------- | ------- | ------ | ------ |
+| style               | 行内样式                              | object  | -      | -      |
+| boxStyle            | 盒子行内样式                          | object  | -      | -      |
+| src                 | 图片地址                              | string  | -      | -      |
+| alt                 | 图片说明                              | string  | -      | -      |
+| className           | 类名                                  | string  | -      | -      |
+| smallImgIconName    | 查看原图 icon class(classfont.css)    | string, | -      | -      |
+| bigImgIconName      | 原图关闭 icon class(classfont.css)    | string, | -      | -      |
+| toolsRotateIconName | 工具栏-旋转 icon class(classfont.css) | string, | -      | -      |
+| toolsBigIconName    | 工具栏-放大 icon class(classfont.css) | string, | -      | -      |
+| toolsSmallIconName  | 工具栏-缩小 icon class(classfont.css) | string, | -      | -      |
+
+###### Input 输入框
+
+**属性**
+
+| 参数          | 说明                               | 类型    | 可选值 | 默认值 |
+| :------------ | ---------------------------------- | ------- | ------ | ------ |
+| style         | 行内样式                           | object  | -      | -      |
+| className     | 类名                               | string  | -      | -      |
+| iconName      | 输入框内 icon class(classfont.css) | string, | -      | -      |
+| iconClassName | icon 类名 (iconName 有值时有效)    | string, | -      | -      |
+| iconStyle     | icon 行内样式(iconName 有值时有效) | object  | -      | -      |
+| placeholder   | 提示信息                           | string  | -      | -      |
+| otherProps    | 其他自有属性                       | -       | -      | -      |
+
+**事件**
+
+| 事件名称    | 说明               | 回调参数 |
+| :---------- | ------------------ | -------- |
+| onChange    | 内容改变时触发     | value    |
+| onKeyUp     | 键盘按键弹起时触发 | event    |
+| onFocus     | input 聚焦是触发   | -        |
+| onIconClick | 点击 icon 时触发   | -        |

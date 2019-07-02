@@ -57,10 +57,11 @@ class Input extends Component {
     return;
   }
 
-  keyUp() {
+  keyUp(ev) {
     let { onKeyUp } = this.props;
+    let event = ev || event;
     if (onKeyUp) {
-      onKeyUp();
+      onKeyUp(event);
     }
     return;
   }
