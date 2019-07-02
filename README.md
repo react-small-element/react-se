@@ -69,3 +69,32 @@ import { getBodyHeight } from "react-se/tools/index.js";
 > > > tools //小工具目录
 >
 > package.json
+
+## 使用说明
+
+#### 组件
+
+###### Button 按钮
+
+**属性**
+
+| 参数           | 说明                                  | 类型    | 可选值 | 默认值 |
+| :------------- | ------------------------------------- | ------- | ------ | ------ |
+| disabled       | 是否禁用                              | boolean | -      | false  |
+| leftIcon       | 按钮左侧图标 class(classfont.css)     | string, | -      | -      |
+| leftIconStyle  | 左侧图标行内样式                      | object  | -      | -      |
+| rightIcon      | 按钮右侧图标(同左侧图标)              | string  | -      | -      |
+| rightIconStyle | 同左侧图标                            | object  | -      | -      |
+| style          | 行内样式                              | object  | -      | -      |
+| edef           | 是否阻止默认事件(任何非空值表示 true) | string  | -      | null   |
+| className      | 自定义类名                            | string  | -      | -      |
+| children       | props.children                        | any     | -      | -      |
+| otherProps     | 其他自有属性                          | -       | -      | -      |
+
+**事件**
+
+| 事件名称     | 说明     | 回调参数 |
+| :----------- | -------- | -------- |
+| onClick      | 点击     | -        |
+| onMouseEnter | 鼠标进入 | -        |
+| onMouseLeave | 鼠标离开 | -        |
