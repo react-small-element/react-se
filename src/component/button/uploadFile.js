@@ -6,7 +6,6 @@ class UploadFile extends Component {
     super(props);
     this.fileChange = this.fileChange.bind(this);
     this.click = this.click.bind(this);
-    this.imgClick = this.imgClick.bind(this);
   }
 
   render() {
@@ -40,7 +39,7 @@ class UploadFile extends Component {
           <img
             src={src}
             alt={alt}
-            onClick={this.imgClick}
+            onClick={this.click}
             className={imgClassName}
             style={imgStyle}
           />
@@ -84,12 +83,6 @@ class UploadFile extends Component {
   click(ev) {
     let event = ev || event;
     event.currentTarget.nextSibling.click();
-    return;
-  }
-
-  imgClick(ev) {
-    let event = ev || event;
-    event.currentTarget.nextSibling.nextSibling.click();
     return;
   }
 }

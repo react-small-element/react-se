@@ -141,7 +141,6 @@ $icon-padding-level: 4px;
   border-bottom: solid 1px $partition-line-color;
   height: $popup-panels-header-height;
   line-height: $popup-panels-header-height;
-  pointer-events: none;
 }
 .zc-popup-panels-content {
   position: relative;
@@ -149,14 +148,12 @@ $icon-padding-level: 4px;
   height: $popup-panels-height;
   padding-top: $box-padding-vertical;
   padding-bottom: $box-padding-vertical;
-  pointer-events: none;
 }
 .zc-popup-panels-footer {
   position: relative;
   border-top: solid 1px $partition-line-color;
   height: $popup-panels-footer-height;
   line-height: $popup-panels-footer-height;
-  pointer-events: none;
 }
 
 .zc-input-parents {
@@ -221,7 +218,7 @@ $icon-padding-level: 4px;
   bottom: 0px;
   text-align: center;
   z-index: 3;
-  padding: $box-padding-vertical $box-padding-level * 2;
+  padding: $box-padding-vertical * 2 $box-padding-level * 2;
   background-color: transparent;
   overflow-y: auto;
 }
@@ -238,7 +235,11 @@ $icon-padding-level: 4px;
   font-size: $fontsize-5;
 }
 .zc-img-zoom-tools {
-  position: relative;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  bottom: 20px;
   z-index: 4;
   color: $theme-color;
   background-color: $page-backgroup-color;
