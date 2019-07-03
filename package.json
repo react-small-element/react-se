@@ -5,7 +5,17 @@
   "repository": ":username/:repository",
   "license": "MIT",
   "main": "lib/index.js",
-  "keywords": [],
+  "keywords": [
+    "react-se",
+    "tools",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
   "author": "ZhangJinLong",
   "private": false,
   "files": [
