@@ -1,0 +1,71 @@
+$theme-color: #3378dd;
+$page-backgroup-color: #f4f7fa; //页面背景颜色
+
+$text-color-1: #333333; //文本一级信息
+$text-color-2: #454545; //文本二级信息
+
+$error-color: #fae6e3;
+$success-color: #dff2ef;
+$warn-color: #fff6e4;
+$info-color: $theme-color;
+$white-color: #ffffff;
+$black-color: #000000;
+
+$button-hover-color: #3d82e7;
+$button-disable: #ebebeb;
+
+$partition-line-color: #efefef;
+
+$input-border-color: #ebebeb;
+$input-text-color: #333333;
+
+$fontsize-1: 12px;
+$fontsize-2: 14px;
+$fontsize-3: 16px;
+$fontsize-4: 18px;
+$fontsize-5: 20px;
+
+html,
+body {
+  background-color: $page-backgroup-color;
+}
+
+.title {
+  text-align: center;
+  color: $text-color-1;
+  font-size: $fontsize-5;
+  font-weight: 500;
+  padding: 40px 0px;
+  border-bottom: solid 1px $input-border-color;
+  background-color: $white-color;
+}
+
+.line-height {
+  height: 10px;
+}
+
+.card {
+  padding: 20px 40px;
+  background-color: $white-color;
+  margin: 0px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: 2px 2px 3px #aaaaaa;
+  }
+}
+.card-title {
+  font-size: $fontsize-3;
+  color: $text-color-1;
+  border-bottom: solid 1px $input-border-color;
+  height: 30px;
+  line-height: 30px;
+}
+.card-content {
+  padding: 10px 0px;
+}
+.card-tips {
+  color: $text-color-2;
+  font-size: $fontsize-1;
+  padding-bottom: 10px;
+}

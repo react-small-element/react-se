@@ -31,7 +31,7 @@ class Sliver extends Component {
   componentWillReceiveProps(nextProps) {
     let { message } = nextProps;
     if (message) {
-      let { second } = this.props;
+      let { second } = nextProps;
       let sec = second || closeSecond;
       if (second === 0) {
         sec = 0;
@@ -104,9 +104,11 @@ class Sliver extends Component {
   //秒，传0 时永不自动关闭
   close(second) {
     let { callback } = this.props;
+    if (this.st) {
+      clearTimeout(this.st);
+    }
     second = second * 1000;
     if (second > 0) {
-      clearTimeout(this.st);
       this.st = setTimeout(() => {
         this.setState({
           show: false

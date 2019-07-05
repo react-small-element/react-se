@@ -17,6 +17,7 @@ class Input extends Component {
       iconClassName,
       iconStyle,
       iconName,
+      onIconClick,
       ...otherProps
     } = this.props;
     let classNames = className ? "zc-input " + className : "zc-input";
