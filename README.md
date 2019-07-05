@@ -1,8 +1,8 @@
 ## react-se
 
 一个简单的自由的 React 基础 UI 库。<br/>
-一些常用的小工具集。
-[UI Demo](https://react-small-element.github.io/react-se/build/index.html)
+一些常用的小工具集。<br/>
+React 基础 UI 组件的展示示例: [UI Demo](https://react-small-element.github.io/react-se/build/index.html)
 
 ## 环境
 
