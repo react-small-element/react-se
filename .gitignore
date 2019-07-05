@@ -349,7 +349,7 @@ fabric.properties
 /coverage
 
 # production
-/build
+#/build
 /lib
 /theme
 /tools
