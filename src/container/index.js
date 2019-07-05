@@ -6,6 +6,7 @@ import InputDemo from "./input";
 import AutoSizeDemo from "./autoSize";
 import ImgZoomDemo from "./imgZoom";
 import UploadFileDemo from "./uploadFile";
+import MsgDemo from "./msg";
 
 export {
   ButtonDemo,
@@ -15,5 +16,6 @@ export {
   InputDemo,
   AutoSizeDemo,
   ImgZoomDemo,
-  UploadFileDemo
+  UploadFileDemo,
+  MsgDemo
 };

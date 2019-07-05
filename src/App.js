@@ -7,7 +7,8 @@ import {
   InputDemo,
   AutoSizeDemo,
   ImgZoomDemo,
-  UploadFileDemo
+  UploadFileDemo,
+  MsgDemo
 } from "./container";
 import "./asset/scss/index.scss";
 import "./App.scss";
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <div className="title">react-se UI 示例</div>
+      <MsgDemo />
       <ButtonDemo />
       <SliverDemo />
       <CircleDemo />
