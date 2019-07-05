@@ -24,7 +24,7 @@ class PopupPanelsDemo extends Component {
         <div className="card-title">弹出面板</div>
         <div className="card-content">
           <Button
-            style={{ margin: "20px" }}
+            style={{ marginRight: "20px" }}
             onClick={this.click.bind(this, true)}
           >
             面板可移动

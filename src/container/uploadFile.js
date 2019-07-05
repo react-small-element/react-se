@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { UploadFile } from "../component";
+import { img1 } from "../asset";
 
 class UploadFileDemo extends Component {
   render() {
@@ -29,7 +30,7 @@ class UploadFileDemo extends Component {
           </div>
           <UploadFile
             onChange={this.change}
-            src="http://pics.sc.chinaz.com/files/pic/pic9/201906/zzpic18767.jpg"
+            src={img1}
             imgStyle={{ width: "120px", height: "30px" }}
           >
             右图标上传按钮

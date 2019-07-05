@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ImgZoom } from "../component";
+import { img1 } from "../asset";
 
 class ImgZoomDemo extends Component {
   render() {
@@ -8,7 +9,7 @@ class ImgZoomDemo extends Component {
         <div className="card-title">图片容器</div>
         <div className="card-content">
           <ImgZoom
-            src="http://pics.sc.chinaz.com/files/pic/pic9/201906/zzpic18767.jpg"
+            src={img1}
             smallImgIconName="iconfont icon-RectangleCopy4"
             bigImgIconName="iconfont icon-RectangleCopy6"
             toolsRotateIconName="iconfont icon-RectangleCopy7"
