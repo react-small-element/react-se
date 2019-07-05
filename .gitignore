@@ -50,7 +50,7 @@ xcuserdata/
 *.xccheckout
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-build/
+#build/
 DerivedData/
 *.moved-aside
 *.pbxuser
@@ -64,7 +64,7 @@ DerivedData/
 
 ### ReactNative.Gradle Stack ###
 .gradle
-/build/
+#/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -200,7 +200,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+#build/Release
 
 # Dependency directories
 node_modules/
